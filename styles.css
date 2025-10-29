@@ -671,3 +671,109 @@ footer {
     background: #faf6f0;
     border-color: #d2c1a7;
 }
+
+
+/* ===== SECCIÓN DE ENCUENTROS ===== */
+.encuentros-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.encuentros-section h2 {
+    color: #8e44ad;
+    font-size: 2em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.encuentros-section .subtitle {
+    color: #7f8c8d;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.encuentro-video-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.encuentro-video-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.encuentro-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+}
+
+.encuentro-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+.encuentro-descripcion {
+    margin-top: 20px;
+    color: #2c3e50;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.encuentro-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #8e44ad, #9b59b6);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(142, 68, 173, 0.3);
+}
+
+.encuentro-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(142, 68, 173, 0.4);
+    background: linear-gradient(45deg, #9b59b6, #8e44ad);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .encuentros-section {
+        padding: 25px 15px;
+    }
+
+    .encuentros-section h2 {
+        font-size: 1.6em;
+    }
+
+    .encuentro-video-wrapper {
+        padding: 15px;
+    }
+}
